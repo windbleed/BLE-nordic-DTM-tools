@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="ModemCtrl.exe"/>
+    <OBJFILES value="ModemCtrl.obj ..\Interface.obj DUT.obj"/>
+    <RESFILES value="ModemCtrl.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ..\Interface.dfm"/>
+    <LIBFILES value="..\qxml-lib\R6dll\bc_qmsl.lib"/>
+    <LIBRARIES value="rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi cds.bpi dsnap.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi"/>
+    <PATHCPP value=".;.."/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="ModemCtrl.cpp"/>
+    <INCLUDEPATH value="..\;..;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;E:\works\qxml-lib\inc"/>
+    <LIBPATH value="..\;..;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;&quot;E:\works\qxml-lib\R6dll&quot;;E:\works\HM02_module_control"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\. -I.. -I&quot;D:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -IE:\works\qxml-lib\inc -src_suffix 
+      cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="ModemCtrl.res" FORMNAME="" UNITNAME="ModemCtrl.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ModemCtrl.cpp" FORMNAME="" UNITNAME="ModemCtrl" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Interface.cpp" FORMNAME="Form1" UNITNAME="Interface" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DUT.cpp" FORMNAME="" UNITNAME="DUT" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qxml-lib\R6dll\bc_qmsl.lib" FORMNAME="" UNITNAME="bc_qmsl.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=7
+Item0=..\;..;D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;E:\works\qxml-lib\inc
+Item1=..\;D:\Program Files\Borland\CBuilder6\Projects;E:\works;$(BCB)\include;$(BCB)\include\vcl;E:\works\qxml-lib\inc
+Item2=$(BCB)\include;$(BCB)\include\vcl;E:\works\qxml-lib\inc
+Item3=E:\pv01_sample;D:\works\pv01lib\lib\R6dll;$(BCB)\include;$(BCB)\include\vcl;D:\works\pv01lib\lib\inc
+Item4=E:\pv01_sample;D:\works\pv01lib\lib\R6dll;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Qualcomm\QDART\QMSL\QMSL_inc
+Item5=$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Qualcomm\QDART\QMSL\QMSL_inc
+Item6=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=7
+Item0=..\;..;D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\works\qxml-lib\R6dll;E:\works\HM02_module_control
+Item1=..\;D:\Program Files\Borland\CBuilder6\Projects;E:\works;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\works\qxml-lib\R6dll;E:\works\HM02_module_control
+Item2=..\;D:\Program Files\Borland\CBuilder6\Projects;E:\works;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\works\qxml-lib\R6dll
+Item3=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\works\qxml-lib\R6dll
+Item4=E:\pv01_sample;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\works\pv01lib\lib\R6dll
+Item5=$(BCB)\lib\obj;$(BCB)\lib;D:\works\pv01lib\lib\R6dll
+Item6=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
